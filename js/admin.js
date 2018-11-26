@@ -374,7 +374,10 @@
 		$( '#pronamic_gateway_test').pronamicPayGatewayTest();
 		$( '.pronamic-pay-tabs' ).pronamicPayTabs();
 
-		// Tooltip
+		// Subscriptions import button.
+		$( 'body.wp-admin.edit-php.post-type-pronamic_pay_subscr .wp-heading-inline' ).append( '<a href="admin.php?page=pronamic_pay_subscriptions_import" class="page-title-action">Import</a>' );
+
+		// Tooltip.
 		$( '.pronamic-pay-tip' ).each( function() {
 			tippy( this, {
 				content: $( this ).attr( 'title' ),
